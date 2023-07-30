@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="如何为vsc配置LaTeX环境1. 下载Texlive1.1 下载进入网址 点击 download from a nearby CTAN mirror 下载.iso后缀的文件，这是一个启动文件 1.2 安装 找到下载好的压缩包，右键，在打开方式中选择 “Windows 资源管理器” 打开 找到 “install-tl-windows” 文件，右键以管理员身份运行 修改路径（可专门建立Environ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://ray8mu34.github.io/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="如何为vsc配置LaTeX环境1. 下载Texlive1.1 下载进入网址 点击 download from a nearby CTAN mirror 下载.iso后缀的文件，这是一个启动文件 1.2 安装 找到下载好的压缩包，右键，在打开方式中选择 “Windows 资源管理器” 打开 找到 “install-tl-windows” 文件，右键以管理员身份运行 修改路径（可专门建立Environ">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-07-30T13:52:01.956Z">
+<meta property="article:modified_time" content="2023-02-07T09:25:37.315Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://Ray8mu34.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-使用vsc编辑渲染LaTeX" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.956Z" itemprop="datePublished">2023-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何为vsc配置LaTeX环境"><a href="#如何为vsc配置LaTeX环境" class="headerlink" title="如何为vsc配置LaTeX环境"></a>如何为vsc配置LaTeX环境</h1><h2 id="1-下载Texlive"><a href="#1-下载Texlive" class="headerlink" title="1. 下载Texlive"></a>1. 下载Texlive</h2><h3 id="1-1-下载"><a href="#1-1-下载" class="headerlink" title="1.1 下载"></a>1.1 下载</h3><p><a target="_blank" rel="noopener" href="https://tug.org/texlive/acquire-iso.html">进入网址</a></p>
+<p>点击 <code>download from a nearby CTAN mirror</code></p>
+<p>下载.iso后缀的文件，这是一个启动文件</p>
+<h3 id="1-2-安装"><a href="#1-2-安装" class="headerlink" title="1.2 安装"></a>1.2 安装</h3><ol>
+<li>找到下载好的压缩包，右键，在打开方式中选择 <strong>“Windows 资源管理器”</strong> 打开</li>
+<li>找到 <strong>“install-tl-windows”</strong> 文件，右键<strong>以管理员身份运行</strong></li>
+<li>修改路径（可专门建立Environment文件夹存放），取消 <strong>安装 TeXworks 前端</strong>的选项</li>
+<li>进行安装，会显示已安装文件数与总文件数。耗时较长</li>
+<li>检查安装：在命令行输入 <code>xelatex -v</code>出现版本信息即安装完成</li>
+</ol>
+<h2 id="2-vsc相关插件下载"><a href="#2-vsc相关插件下载" class="headerlink" title="2. vsc相关插件下载"></a>2. vsc相关插件下载</h2><p>在扩展中搜索下载 <strong>latex workshop</strong> 插件</p>
+<h2 id="3-设置LaTeX环境"><a href="#3-设置LaTeX环境" class="headerlink" title="3. 设置LaTeX环境"></a>3. 设置LaTeX环境</h2><h3 id="3-1-配置setting-json文件"><a href="#3-1-配置setting-json文件" class="headerlink" title="3.1 配置setting.json文件"></a>3.1 配置setting.json文件</h3><p>打开vsc的设置（快捷键 **ctrl + ,**）</p>
+<p>在GUI设置界面右上角，点击“打开设置（json）”选项</p>
+<p>此时会出现setting.json文件，正常情况下其内容仅含一对花括号</p>
+<p>将如下配置代码加入其中（不含外部PDF查看器功能）：</p>
+<p>【注】该配置代码用于覆盖原setting文件，不要粘贴到已有的{ }之中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.autoBuild.run&quot;</span>: <span class="string">&quot;never&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.showContextMenu&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.intellisense.package.enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.message.error.show&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.message.warning.show&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.tools&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;latexmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;latexmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-pdf&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-outdir=%OUTDIR%&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.recipes&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;XeLaTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;PDFLaTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;BibTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;LaTeXmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;latexmk&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;xelatex -&gt; bibtex -&gt; xelatex*2&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.clean.fileTypes&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;*.aux&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.bbl&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.blg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.idx&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.ind&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.lof&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.lot&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.out&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.toc&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.acn&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.acr&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.alg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.glg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.glo&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.gls&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.ist&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.fls&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.log&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.fdb_latexmk&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.autoClean.run&quot;</span>: <span class="string">&quot;onFailed&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.recipe.default&quot;</span>: <span class="string">&quot;lastUsed&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-修改配置文件"><a href="#3-2-修改配置文件" class="headerlink" title="3.2 修改配置文件"></a>3.2 修改配置文件</h3><p>如果需要在上述代码之后再添加其他代码，只须在最后一句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>后面加上 <code>,</code>，使之变为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span>,</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>其中 <code>......</code>部分为新添加的内容</p>
+<h2 id="4-编译示例"><a href="#4-编译示例" class="headerlink" title="4. 编译示例"></a>4. 编译示例</h2><h3 id="4-1-编译链选择"><a href="#4-1-编译链选择" class="headerlink" title="4.1 编译链选择"></a>4.1 编译链选择</h3><p>编译是使用左侧TEX里的Build LaTeX project</p>
+<p>可以选择具体的编译路径</p>
+<p>如如果要编译参考文献 <code>.bib</code>文件，使用 <code>xelatex -&gt; bibtex -&gt; xelatex*2</code>编译链会更好</p>
+<h3 id="4-2-同步测试"><a href="#4-2-同步测试" class="headerlink" title="4.2 同步测试"></a>4.2 同步测试</h3><p><strong>正向同步：</strong></p>
+<p>选中一段tex代码，右键单击，在菜单中点击 <code>SyncTeX from cursor</code></p>
+<p>【注】也可以选中后使用快捷键Ctrl+Alt+J跳转</p>
+<p>如果跳转到PDF相应位置，则无问题</p>
+<p><strong>反向同步：</strong></p>
+<p>在PDF一行左键双击或按住Ctrl再单击，即可实现跳转</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ray8mu34.github.io/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/" data-id="clkpi57l200030ctygje07hgj" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/07/30/vsc%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEpython/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E9%A2%84%E8%A7%88markdown/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/vsc%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

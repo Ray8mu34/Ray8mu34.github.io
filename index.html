@@ -73,25 +73,133 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-vsc配置python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/07/30/test/" class="article-date">
-  <time class="dt-published" datetime="2023-07-30T07:56:48.000Z" itemprop="datePublished">2023-07-30</time>
+    <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEpython/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.964Z" itemprop="datePublished">2023-07-30</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/30/test/">test</a>
-    </h1>
-  
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何为vsc配置python"><a href="#如何为vsc配置python" class="headerlink" title="如何为vsc配置python"></a>如何为vsc配置python</h1><h2 id="1-python的下载和安装"><a href="#1-python的下载和安装" class="headerlink" title="1. python的下载和安装"></a>1. python的下载和安装</h2><h3 id="1-1-下载python"><a href="#1-1-下载python" class="headerlink" title="1.1 下载python"></a>1.1 下载python</h3><p><a target="_blank" rel="noopener" href="https://www.python.org/">python的官方网址</a></p>
+<p>选择download，下载相应版本即可</p>
+<h3 id="1-2-安装python"><a href="#1-2-安装python" class="headerlink" title="1.2 安装python"></a>1.2 安装python</h3><p><strong>步骤</strong></p>
+<ul>
+<li>运行安装程序，勾选将python加入到path，以便编辑器寻找解释器位置</li>
+<li>选择自主安装，指定安装位置，可以自行建立文件夹专门存放这些编译器、解释器</li>
+</ul>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>第一步，只须勾选Documentation项、pip项和py launcher</li>
+<li>第二步，注意调整位置，只须勾选Associate和Add path两项</li>
+</ul>
+<p><strong>验证安装情况</strong></p>
+<p>在命令行中输入 <code>python</code>，如果出现版本信息，则表明安装完成</p>
+<h2 id="2-vsc插件准备"><a href="#2-vsc插件准备" class="headerlink" title="2. vsc插件准备"></a>2. vsc插件准备</h2><h3 id="2-1-插件推荐"><a href="#2-1-插件推荐" class="headerlink" title="2.1 插件推荐"></a>2.1 插件推荐</h3><ul>
+<li>Python：用于调用python解释器</li>
+<li>Pyright：提供静态检查</li>
+</ul>
+<h3 id="2-2-如何使用外部控制台"><a href="#2-2-如何使用外部控制台" class="headerlink" title="2.2 如何使用外部控制台"></a>2.2 如何使用外部控制台</h3><p>随意编写一个程序，打开文件夹，进行调试</p>
+<p>根据提示自定义调试，创建launch.json文件</p>
+<p>修改其中的 <code>&quot;console&quot;: &quot;integratedTerminal&quot;</code>为 <code>&quot;console&quot;: &quot;externalTerminal&quot;</code>即可</p>
+<h2 id="3-补充：对python的说明"><a href="#3-补充：对python的说明" class="headerlink" title="3. 补充：对python的说明"></a>3. 补充：对python的说明</h2><h3 id="3-1-python环境"><a href="#3-1-python环境" class="headerlink" title="3.1 python环境"></a>3.1 python环境</h3><p>python的环境在一台电脑中可以有很多个，各自放在特定的文件夹中，其中lib文件夹存放了自行下载的第三方包</p>
+<p>在运行python代码时，选择一个解释器，就会以其中一种环境来运行代码</p>
+<p>这也是为什么python程序打包成.exe文件会很庞大：无论你是否用到所有的包，环境内所有的包都会被加入到可执行文件中</p>
+<h3 id="3-2-第三方包的下载"><a href="#3-2-第三方包的下载" class="headerlink" title="3.2 第三方包的下载"></a>3.2 第三方包的下载</h3><p>一般是在命令行中执行python应用，使用pip工具下载</p>
+<p>在VS中，如果选定了环境，也可以直接在VS里为该python环境添加第三方包，操作相对容易</p>
+<p>在vsc里也有类似VS中的操作</p>
 
-      </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ray8mu34.github.io/2023/07/30/vsc%E9%85%8D%E7%BD%AEpython/" data-id="clkpi57l100020cty5hvqa4lb" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-使用vsc编辑预览markdown" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E9%A2%84%E8%A7%88markdown/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.960Z" itemprop="datePublished">2023-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何为vsc配置markdown"><a href="#如何为vsc配置markdown" class="headerlink" title="如何为vsc配置markdown"></a>如何为vsc配置markdown</h1><h2 id="1-插件准备"><a href="#1-插件准备" class="headerlink" title="1. 插件准备"></a>1. 插件准备</h2><h3 id="1-1-Ofiice-Viewer-md-version"><a href="#1-1-Ofiice-Viewer-md-version" class="headerlink" title="1.1 Ofiice Viewer(md version)"></a>1.1 Ofiice Viewer(md version)</h3><p>实际上是一个Vditor</p>
+<p><strong>功能简介</strong>：</p>
+<ul>
+<li>所见即所得实现和分屏预览</li>
+<li>高效地输入表格、列表等，类似word的体验</li>
+<li>一系列快捷键</li>
+<li>导出PDF、docx、html（右键点击）</li>
+<li>修改vsc的默认md编辑器（可设置回）</li>
+</ul>
+<p><strong>一些缺点</strong>：</p>
+<ul>
+<li>LaTeX公式无智能提示补全</li>
+</ul>
+<h3 id="1-2-Markdown-all-in-one"><a href="#1-2-Markdown-all-in-one" class="headerlink" title="1.2 Markdown all in one"></a>1.2 Markdown all in one</h3><p><strong>主要功能</strong>：</p>
+<ul>
+<li>数学公式支持，补全较强大</li>
+<li>格式化表格，轻松对齐</li>
+</ul>
+<h3 id="1-3-Markdown-Preview-Enhanced"><a href="#1-3-Markdown-Preview-Enhanced" class="headerlink" title="1.3 Markdown Preview Enhanced"></a>1.3 Markdown Preview Enhanced</h3><p><strong>主要功能</strong>：</p>
+<ul>
+<li>批注</li>
+<li>合并单元格</li>
+<li>插入 LaTeX 公式</li>
+<li>用纯文本绘图</li>
+<li>运行代码</li>
+<li>导入和导出（很完善）</li>
+<li>制作幻灯片（技巧）</li>
+</ul>
+<h3 id="1-4-组合须知"><a href="#1-4-组合须知" class="headerlink" title="1.4 组合须知"></a>1.4 组合须知</h3><p>编辑器问题：</p>
+<p>默认使用Vditor编辑器，这时MAIO和MPE插件均不可用，事实上该编辑器已足够强大</p>
+<p>输入数学公式，或者需要MPE的高级功能时，可选择打开vsc的编辑器</p>
+<p>导入导出建议使用MPE，渲染效果更好，选择chrome导出PDF即可</p>
+<h2 id="2-Markdown语法"><a href="#2-Markdown语法" class="headerlink" title="2. Markdown语法"></a>2. Markdown语法</h2><p>见链接即可：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/86516807">基础语法</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/518186479">数学符号输入</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ray8mu34.github.io/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E9%A2%84%E8%A7%88markdown/" data-id="clkpi57l200040cty5iab35h1" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-vsc配置c++" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.956Z" itemprop="datePublished">2023-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
     
     <div class="e-content article-entry" itemprop="articleBody">
       
@@ -150,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ray8mu34.github.io/2023/07/30/test/" data-id="clkp5idk4000070ty3ot1e87v" data-title="test" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://ray8mu34.github.io/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/" data-id="clkpi57kz00010cty1e186umf" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -162,46 +270,126 @@
 
 
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-使用vsc编辑渲染LaTeX" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/07/30/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-07-30T06:52:21.179Z" itemprop="datePublished">2023-07-30</time>
+    <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.956Z" itemprop="datePublished">2023-07-30</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/07/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="如何为vsc配置LaTeX环境"><a href="#如何为vsc配置LaTeX环境" class="headerlink" title="如何为vsc配置LaTeX环境"></a>如何为vsc配置LaTeX环境</h1><h2 id="1-下载Texlive"><a href="#1-下载Texlive" class="headerlink" title="1. 下载Texlive"></a>1. 下载Texlive</h2><h3 id="1-1-下载"><a href="#1-1-下载" class="headerlink" title="1.1 下载"></a>1.1 下载</h3><p><a target="_blank" rel="noopener" href="https://tug.org/texlive/acquire-iso.html">进入网址</a></p>
+<p>点击 <code>download from a nearby CTAN mirror</code></p>
+<p>下载.iso后缀的文件，这是一个启动文件</p>
+<h3 id="1-2-安装"><a href="#1-2-安装" class="headerlink" title="1.2 安装"></a>1.2 安装</h3><ol>
+<li>找到下载好的压缩包，右键，在打开方式中选择 <strong>“Windows 资源管理器”</strong> 打开</li>
+<li>找到 <strong>“install-tl-windows”</strong> 文件，右键<strong>以管理员身份运行</strong></li>
+<li>修改路径（可专门建立Environment文件夹存放），取消 <strong>安装 TeXworks 前端</strong>的选项</li>
+<li>进行安装，会显示已安装文件数与总文件数。耗时较长</li>
+<li>检查安装：在命令行输入 <code>xelatex -v</code>出现版本信息即安装完成</li>
+</ol>
+<h2 id="2-vsc相关插件下载"><a href="#2-vsc相关插件下载" class="headerlink" title="2. vsc相关插件下载"></a>2. vsc相关插件下载</h2><p>在扩展中搜索下载 <strong>latex workshop</strong> 插件</p>
+<h2 id="3-设置LaTeX环境"><a href="#3-设置LaTeX环境" class="headerlink" title="3. 设置LaTeX环境"></a>3. 设置LaTeX环境</h2><h3 id="3-1-配置setting-json文件"><a href="#3-1-配置setting-json文件" class="headerlink" title="3.1 配置setting.json文件"></a>3.1 配置setting.json文件</h3><p>打开vsc的设置（快捷键 **ctrl + ,**）</p>
+<p>在GUI设置界面右上角，点击“打开设置（json）”选项</p>
+<p>此时会出现setting.json文件，正常情况下其内容仅含一对花括号</p>
+<p>将如下配置代码加入其中（不含外部PDF查看器功能）：</p>
+<p>【注】该配置代码用于覆盖原setting文件，不要粘贴到已有的{ }之中</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.autoBuild.run&quot;</span>: <span class="string">&quot;never&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.showContextMenu&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.intellisense.package.enabled&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.message.error.show&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.message.warning.show&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.tools&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;latexmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;latexmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;-synctex=1&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-interaction=nonstopmode&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-file-line-error&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-pdf&quot;</span>,</span><br><span class="line">                <span class="string">&quot;-outdir=%OUTDIR%&quot;</span>,</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;command&quot;</span>: <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">            <span class="string">&quot;args&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;%DOCFILE%&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.recipes&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;XeLaTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;PDFLaTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;BibTeX&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;LaTeXmk&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;latexmk&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;xelatex -&gt; bibtex -&gt; xelatex*2&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;xelatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;pdflatex -&gt; bibtex -&gt; pdflatex*2&quot;</span>,</span><br><span class="line">            <span class="string">&quot;tools&quot;</span>: [</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;bibtex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span>,</span><br><span class="line">                <span class="string">&quot;pdflatex&quot;</span></span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.clean.fileTypes&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;*.aux&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.bbl&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.blg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.idx&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.ind&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.lof&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.lot&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.out&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.toc&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.acn&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.acr&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.alg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.glg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.glo&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.gls&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.ist&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.fls&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.log&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*.fdb_latexmk&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.autoClean.run&quot;</span>: <span class="string">&quot;onFailed&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.latex.recipe.default&quot;</span>: <span class="string">&quot;lastUsed&quot;</span>,</span><br><span class="line">    <span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-修改配置文件"><a href="#3-2-修改配置文件" class="headerlink" title="3.2 修改配置文件"></a>3.2 修改配置文件</h3><p>如果需要在上述代码之后再添加其他代码，只须在最后一句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>后面加上 <code>,</code>，使之变为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;latex-workshop.view.pdf.internal.synctex.keybinding&quot;</span>: <span class="string">&quot;double-click&quot;</span>,</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>其中 <code>......</code>部分为新添加的内容</p>
+<h2 id="4-编译示例"><a href="#4-编译示例" class="headerlink" title="4. 编译示例"></a>4. 编译示例</h2><h3 id="4-1-编译链选择"><a href="#4-1-编译链选择" class="headerlink" title="4.1 编译链选择"></a>4.1 编译链选择</h3><p>编译是使用左侧TEX里的Build LaTeX project</p>
+<p>可以选择具体的编译路径</p>
+<p>如如果要编译参考文献 <code>.bib</code>文件，使用 <code>xelatex -&gt; bibtex -&gt; xelatex*2</code>编译链会更好</p>
+<h3 id="4-2-同步测试"><a href="#4-2-同步测试" class="headerlink" title="4.2 同步测试"></a>4.2 同步测试</h3><p><strong>正向同步：</strong></p>
+<p>选中一段tex代码，右键单击，在菜单中点击 <code>SyncTeX from cursor</code></p>
+<p>【注】也可以选中后使用快捷键Ctrl+Alt+J跳转</p>
+<p>如果跳转到PDF相应位置，则无问题</p>
+<p><strong>反向同步：</strong></p>
+<p>在PDF一行左键双击或按住Ctrl再单击，即可实现跳转</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://ray8mu34.github.io/2023/07/30/hello-world/" data-id="clkp4s1k90000kgty0y6s56kx" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://ray8mu34.github.io/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/" data-id="clkpi57l200030ctygje07hgj" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-vsc下载安装" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/30/vsc%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85/" class="article-date">
+  <time class="dt-published" datetime="2023-07-30T13:52:01.952Z" itemprop="datePublished">2023-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="如何在电脑上安装、配置vs-code"><a href="#如何在电脑上安装、配置vs-code" class="headerlink" title="如何在电脑上安装、配置vs code"></a>如何在电脑上安装、配置vs code</h1><h2 id="1-vs-code的安装"><a href="#1-vs-code的安装" class="headerlink" title="1. vs code的安装"></a>1. vs code的安装</h2><h3 id="1-1-下载"><a href="#1-1-下载" class="headerlink" title="1.1 下载"></a>1.1 下载</h3><p><strong>官网下载</strong>：<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<pre><code>注意下载所得为一个setup.exe文件，安装之后会删掉，所以可以随意安在任何位置。
+
+建议下载system版本。
+</code></pre>
+<p><strong>下载速度慢的解决办法</strong>：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112215618">知乎的回答</a></p>
+<pre><code>在浏览器中找到下载地址，再将https://1111.net/123中的1111.net改为vscode.cdn.azure.cn
+</code></pre>
+<h3 id="1-2-安装"><a href="#1-2-安装" class="headerlink" title="1.2 安装"></a>1.2 安装</h3><ul>
+<li><p><strong>安装位置</strong>：建议放在D盘，建文件夹VSC。setup程序会在文件夹内创建名为Microsoft VS Code的文件夹。</p>
+</li>
+<li><p><strong>安装选项</strong>：</p>
+<p>①将“通过code 打开“操作添加到windows资源管理器文件上下文菜单</p>
+<p>②将“通过code 打开”操作添加到windows资源管理器目录上下文菜单</p>
+<p><strong>【</strong>说明<strong>】</strong>：①②勾选上，可以对文件，目录点击鼠标右键，选择使用 VScode 打开。</p>
+<p>③将code注册为受支持的文件类型的编辑器</p>
+<p>【说明<strong>】</strong>：默认使用 VScode 打开诸如 txt,py 等文本类型的文件，<strong>一般建议不勾选</strong>。</p>
+<p>④添加到PATH（重启后生效）</p>
+<p>【说明<strong>】</strong>：这步骤默认的，勾选上，不用配置环境变量，可以直接使用。</p>
+</li>
+<li><p><strong>备注</strong>：暂无</p>
+</li>
+</ul>
+<h2 id="2-vs-code的美化"><a href="#2-vs-code的美化" class="headerlink" title="2. vs code的美化"></a>2. vs code的美化</h2><h3 id="2-1-语言"><a href="#2-1-语言" class="headerlink" title="2.1 语言"></a>2.1 语言</h3><p>在扩展中搜索Chinese，安装即可</p>
+<h3 id="2-2-主题"><a href="#2-2-主题" class="headerlink" title="2.2 主题"></a>2.2 主题</h3><p>推荐主题One Dark Pro</p>
+<h3 id="2-3-字体"><a href="#2-3-字体" class="headerlink" title="2.3 字体"></a>2.3 字体</h3><p>推荐字体Source Code Pro</p>
+<h4 id="2-3-1-获取Source-Code-Pro"><a href="#2-3-1-获取Source-Code-Pro" class="headerlink" title="2.3.1 获取Source Code Pro"></a>2.3.1 获取Source Code Pro</h4><p><a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-code-pro">官方链接</a></p>
+<p>下载之后，将其剪切到Windows的字体文件夹中</p>
+<ul>
+<li>方式一，进入文件夹 <code>C:\windowns\Fonts</code></li>
+<li>方式二，打开控制面板，进入字体</li>
+</ul>
+<h4 id="2-3-2-配置vsc字体"><a href="#2-3-2-配置vsc字体" class="headerlink" title="2.3.2 配置vsc字体"></a>2.3.2 配置vsc字体</h4><p>进入设置的GUI界面</p>
+<p>将“控制字体系列”内的内容改为 Source Code Pro, ‘Courier New’, monospace</p>
+<p>其实只改动了第一个</p>
+<h2 id="3-vs-code的卸载"><a href="#3-vs-code的卸载" class="headerlink" title="3. vs code的卸载"></a>3. vs code的卸载</h2><p>彻底地清除以前的配置，除了删除应用，还需要清空下面两个文件夹</p>
+<ul>
+<li>C:\Users$用户名.vscode</li>
+<li>C:\Users$用户名\AppData\Roaming\Code</li>
+</ul>
+<p>【注】这里的“$用户名”根据自己的用户名而定。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ray8mu34.github.io/2023/07/30/vsc%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85/" data-id="clkpi57ku00000ctyh9i15wnt" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -244,11 +432,23 @@
       <ul>
         
           <li>
-            <a href="/2023/07/30/test/">test</a>
+            <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEpython/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2023/07/30/hello-world/">Hello World</a>
+            <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E9%A2%84%E8%A7%88markdown/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/30/vsc%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85/">(no title)</a>
           </li>
         
       </ul>
