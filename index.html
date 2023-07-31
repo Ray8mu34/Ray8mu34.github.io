@@ -73,6 +73,87 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-python环境浅谈" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/31/python%E7%8E%AF%E5%A2%83%E6%B5%85%E8%B0%88/" class="article-date">
+  <time class="dt-published" datetime="2023-07-31T07:20:04.345Z" itemprop="datePublished">2023-07-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/07/31/python%E7%8E%AF%E5%A2%83%E6%B5%85%E8%B0%88/">浅谈Python环境</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="浅谈python环境"><a href="#浅谈python环境" class="headerlink" title="浅谈python环境"></a>浅谈python环境</h1><h2 id="1-Python环境包含什么"><a href="#1-Python环境包含什么" class="headerlink" title="1. Python环境包含什么"></a>1. Python环境包含什么</h2><p>一般来说，一个python环境包含以下三个要素：</p>
+<ul>
+<li>Python解释器</li>
+<li>Python库（标准库与第三方库）</li>
+<li>可执行程序的位置</li>
+</ul>
+<p>由于标准库在下载解释器时往往自带，所以我们关注的其实是自己所需的第三方库，管理第三方包的常用工具有pip和conda</p>
+<p>而要利用Python进行开发，我们还需要编辑器或IDE</p>
+<h2 id="2-官方Python安装"><a href="#2-官方Python安装" class="headerlink" title="2. 官方Python安装"></a>2. 官方Python安装</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><p>Python官方提供了环境的下载，也即是我们熟知的Python <a target="_blank" rel="noopener" href="https://www.python.org/">官方网址</a><br>在安装时，还额外提供了一款基本IDE（IDLE）和pip工具等选项</p>
+<p>除了官方提供的版本，也有一些Python的发行版，包含Python解释器和一部分包，以及其它工具。anaconda即是这样一个例子</p>
+<h3 id="2-2-主体"><a href="#2-2-主体" class="headerlink" title="2.2 主体"></a>2.2 主体</h3><p>安装好的Python里<strong>最主要的文件（夹）有如下几个：</strong></p>
+<ul>
+<li><code>python.exe</code></li>
+<li><code>Lib</code>文件夹</li>
+<li><code>Scripts</code>文件夹</li>
+</ul>
+<p><code>python.exe</code>即是解释器，在调用时使用该程序解释执行python代码；<code>Lib</code>文件夹，包括其内部的 <code>site-packages</code>，用于存放包；<code>Scripts</code>文件夹用于存放可执行文件和脚本，如下载其它第三方包时用到的pip</p>
+<p>一般而言，安装的包都会放在 <code>Lib</code>文件夹下。如果要详细查看包的搜寻路径，则可以使用python内部的变量 <code>sys.path</code>，打印其值</p>
+<h3 id="2-3-环境变量"><a href="#2-3-环境变量" class="headerlink" title="2.3 环境变量"></a>2.3 环境变量</h3><p>如果没有在安装时选择add python to path，为了让其它应用能够启动Python解释器，我们需要将 <code>python.exe</code>添加到系统的环境变量内；同时要使用各种可执行文件，还需要将 <code>Scripts</code>文件夹也加入环境变量</p>
+<p>添加完成后，在命令行输入 <code>python</code> 即可查看Python版本，如果系统内安装了多个版本的Python，则会显示路径在系统环境变量里最靠前的一个</p>
+<h2 id="3-虚拟环境是什么"><a href="#3-虚拟环境是什么" class="headerlink" title="3. 虚拟环境是什么"></a>3. 虚拟环境是什么</h2><h3 id="3-1-为什么需要虚拟环境"><a href="#3-1-为什么需要虚拟环境" class="headerlink" title="3.1 为什么需要虚拟环境"></a>3.1 为什么需要虚拟环境</h3><p>如果需要在同一终端开发多个python项目，很可能各项目之间使用的包的版本、python的版本等有所不同，有时候甚至相互冲突，因而，我们需要多个python环境进行开发</p>
+<p>所谓的虚拟环境，其实取名叫环境副本或许更合适。选取一个新的文件夹，命名保存，就可以创建一个新的环境。为了方便管理，python标准库提供了 <code>venv</code> 模块用于创建、管理虚拟环境</p>
+<h3 id="3-2-虚拟环境的构成"><a href="#3-2-虚拟环境的构成" class="headerlink" title="3.2 虚拟环境的构成"></a>3.2 虚拟环境的构成</h3><p>虚拟环境所在的文件夹也包含如下三个部分</p>
+<ul>
+<li><code>python.exe</code></li>
+<li><code>Lib</code>文件夹</li>
+<li><code>Scripts</code>文件夹</li>
+</ul>
+<p>与一般环境不同的是，<code>python.exe</code>是放在 <code>Scripts</code>文件夹下的，所以在添加环境变量时<strong>只需要将 <code>Scripts</code>加入</strong></p>
+<h3 id="3-3-使用-venv模块创建虚拟环境"><a href="#3-3-使用-venv模块创建虚拟环境" class="headerlink" title="3.3 使用 venv模块创建虚拟环境"></a>3.3 使用 <code>venv</code>模块创建虚拟环境</h3><p>通过在命令行输入如下命令可以创建虚拟环境</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv 环境名</span><br></pre></td></tr></table></figure>
+
+<p>这样会产生新建文件夹，里面即包含了一个虚拟环境，在 <code>Scripts</code>目录下会有 <code>activate</code>和 <code>deactivate</code>两个文件</p>
+<p>在命令行界面使用时，通过 <code>activate</code>&#x2F;<code>deactivate</code>命令来激活&#x2F;退出环境，在激活时需要输入activate的完整路径。</p>
+<p>所谓激活其实<strong>是将<code>Scripts</code>目录临时加入系统环境变量的首位</strong>，这样系统优先使用的即是该目录下的python解释器</p>
+<p>在IDE和编辑器中使用时，则根据选择的Python解释器的路径，会自动地使用相应目录下的包，也即自动切换了虚拟环境。这也意味着在命令行界面中，只要在相应解释器所在的目录下启动python，不需要激活也能使用虚拟环境——虚拟环境其实就是正常的环境</p>
+<p>自己配置环境对经验不足的人来说比较困难，可以考虑使用其它工具辅助，如anaconda提供的包管理工具。在本文不做赘述</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://ray8mu34.github.io/2023/07/31/python%E7%8E%AF%E5%A2%83%E6%B5%85%E8%B0%88/" data-id="clkqjj0gz0000c8ty08ybh96v" data-title="浅谈Python环境" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-利用VS使用c++" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/07/31/%E5%88%A9%E7%94%A8VS%E4%BD%BF%E7%94%A8c++/" class="article-date">
@@ -573,7 +654,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/c/" style="font-size: 15px;">c++</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/vsc-tools/" style="font-size: 20px;">vsc tools</a>
+      <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/vsc-tools/" style="font-size: 20px;">vsc tools</a>
     </div>
   </div>
 
@@ -595,6 +676,10 @@
       <ul>
         
           <li>
+            <a href="/2023/07/31/python%E7%8E%AF%E5%A2%83%E6%B5%85%E8%B0%88/">浅谈Python环境</a>
+          </li>
+        
+          <li>
             <a href="/2023/07/31/%E5%88%A9%E7%94%A8VS%E4%BD%BF%E7%94%A8c++/">利用VS编写c++</a>
           </li>
         
@@ -608,10 +693,6 @@
         
           <li>
             <a href="/2023/07/30/vsc%E9%85%8D%E7%BD%AEc++/">为vsc配置c++</a>
-          </li>
-        
-          <li>
-            <a href="/2023/07/30/%E4%BD%BF%E7%94%A8vsc%E7%BC%96%E8%BE%91%E6%B8%B2%E6%9F%93LaTeX/">使用vsc编辑渲染LaTeX</a>
           </li>
         
       </ul>
