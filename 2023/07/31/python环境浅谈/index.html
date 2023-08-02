@@ -6,15 +6,15 @@
   
   <title>浅谈Python环境 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="浅谈python环境1. Python环境包含什么一般来说，一个python环境包含以下三个要素：  Python解释器 Python库（标准库与第三方库） 可执行程序的位置  由于标准库在下载解释器时往往自带，所以我们关注的其实是自己所需的第三方库，管理第三方包的常用工具有pip和conda 而要利用Python进行开发，我们还需要编辑器或IDE 2. 官方Python安装2.1 安装Pytho">
+  <meta name="description" content="1. Python环境包含什么一般来说，一个python环境包含以下三个要素：  Python解释器 Python库（标准库与第三方库） 可执行程序的位置  由于标准库在下载解释器时往往自带，所以我们关注的其实是自己所需的第三方库，管理第三方包的常用工具有pip和conda 而要利用Python进行开发，我们还需要编辑器或IDE 2. 官方Python安装2.1 安装Python官方提供了环境的下">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈Python环境">
 <meta property="og:url" content="http://ray8mu34.github.io/2023/07/31/python%E7%8E%AF%E5%A2%83%E6%B5%85%E8%B0%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="浅谈python环境1. Python环境包含什么一般来说，一个python环境包含以下三个要素：  Python解释器 Python库（标准库与第三方库） 可执行程序的位置  由于标准库在下载解释器时往往自带，所以我们关注的其实是自己所需的第三方库，管理第三方包的常用工具有pip和conda 而要利用Python进行开发，我们还需要编辑器或IDE 2. 官方Python安装2.1 安装Pytho">
+<meta property="og:description" content="1. Python环境包含什么一般来说，一个python环境包含以下三个要素：  Python解释器 Python库（标准库与第三方库） 可执行程序的位置  由于标准库在下载解释器时往往自带，所以我们关注的其实是自己所需的第三方库，管理第三方包的常用工具有pip和conda 而要利用Python进行开发，我们还需要编辑器或IDE 2. 官方Python安装2.1 安装Python官方提供了环境的下">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-07-31T07:20:04.345Z">
-<meta property="article:modified_time" content="2023-07-31T07:19:22.058Z">
+<meta property="article:modified_time" content="2023-08-02T12:34:08.930Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -102,7 +102,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="浅谈python环境"><a href="#浅谈python环境" class="headerlink" title="浅谈python环境"></a>浅谈python环境</h1><h2 id="1-Python环境包含什么"><a href="#1-Python环境包含什么" class="headerlink" title="1. Python环境包含什么"></a>1. Python环境包含什么</h2><p>一般来说，一个python环境包含以下三个要素：</p>
+        <h2 id="1-Python环境包含什么"><a href="#1-Python环境包含什么" class="headerlink" title="1. Python环境包含什么"></a>1. Python环境包含什么</h2><p>一般来说，一个python环境包含以下三个要素：</p>
 <ul>
 <li>Python解释器</li>
 <li>Python库（标准库与第三方库）</li>
@@ -136,7 +136,7 @@
 
 <p>这样会产生新建文件夹，里面即包含了一个虚拟环境，在 <code>Scripts</code>目录下会有 <code>activate</code>和 <code>deactivate</code>两个文件</p>
 <p>在命令行界面使用时，通过 <code>activate</code>&#x2F;<code>deactivate</code>命令来激活&#x2F;退出环境，在激活时需要输入activate的完整路径。</p>
-<p>所谓激活其实<strong>是将<code>Scripts</code>目录临时加入系统环境变量的首位</strong>，这样系统优先使用的即是该目录下的python解释器</p>
+<p>所谓激活其实<strong>是将 <code>Scripts</code>目录临时加入系统环境变量的首位</strong>，这样系统优先使用的即是该目录下的python解释器</p>
 <p>在IDE和编辑器中使用时，则根据选择的Python解释器的路径，会自动地使用相应目录下的包，也即自动切换了虚拟环境。这也意味着在命令行界面中，只要在相应解释器所在的目录下启动python，不需要激活也能使用虚拟环境——虚拟环境其实就是正常的环境</p>
 <p>自己配置环境对经验不足的人来说比较困难，可以考虑使用其它工具辅助，如anaconda提供的包管理工具。在本文不做赘述</p>
 
